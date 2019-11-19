@@ -1,0 +1,115 @@
+.popup {
+  background: #fff;
+  box-shadow: 0 1px 18px rgba(0,0,0,.5);
+  width: 768px;
+  border-radius: 5px;
+  &--callback {
+    width: 315px;
+    .fancybox-close-small {
+      left: -22%;
+    }
+  }
+  &__btn {
+    width: 100%;
+    height: 29px;
+    display: block;
+    margin-top: 10px;
+    padding: 0 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background: #2ea86c;
+    border: 3px solid #18a55f;
+    border-radius: 7px;
+    outline: none;
+    &:hover {
+      color: #fff;
+    }
+    &--catalog {
+      height: 54px;
+    }
+  }
+
+  .fancybox-close-small {
+    @include xs-block {
+      right: 4px;
+      top: 14px;
+    }
+  }
+}
+
+.forma-order {
+  display: flex;
+  max-height: 400px;
+  @include xs-block {
+    max-height: 100%;
+  }
+  &__wrap {
+    position: relative;
+    flex: 1;
+    padding: 30px 28px 17px;
+    background: #fff;
+    border-radius: 5px;
+    @include xs-block {
+      padding: 30px 20px 17px;
+    }
+  }
+  &__header {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #11723d;
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__row {
+    position: relative;
+    margin-bottom: 17px;
+  }
+  &__input {
+    width: 100%;
+    padding: 0 14px;
+    padding-left: 45px;
+    border: 1px solid #11723d;
+    border-radius: 6px;
+    height: 45px;
+    outline: none;
+    &--name {
+      background: #f0f4ec url('../../img/icons/cfi-name.png') 14px 50% no-repeat;
+    }
+    &--phone {
+      background: #f0f4ec url('../../img/icons/cfi-phone.png') 14px 50% no-repeat;
+    }
+    &--size {
+      padding-left: 14px;
+    }
+  }
+  &__plash {
+    margin-top: 10px;
+  }
+  &__agree {
+    margin-top: 10px;
+    color: #999;
+    font-size: 11px;
+    text-align: center;
+  }
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.modal-form {
+  display: none;
+  padding: 50px;
+  text-align: center;
+  border-radius: 5px;
+  .fancybox-close-small {
+    left: 30%;
+  }
+}
+

@@ -1,0 +1,31 @@
+.forma {
+  @include col();
+  @include size(2.85);
+  @include xs-block {
+    @include size(12);
+  }
+  &__title {
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    @include xs-block {
+      text-align: center;
+    }
+  }
+  &__input {
+    width: 100%;
+    margin-bottom: 11px;
+    padding: 9px 9px 9px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #bdbdbd;
+    color: #bdbdbd;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__btn {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #ffffff;
+  }
+}
