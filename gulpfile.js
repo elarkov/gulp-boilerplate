@@ -9,7 +9,6 @@ const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 const gulpif = require('gulp-if');
 const gcmq = require('gulp-group-css-media-queries');
-const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const cache = require('gulp-cache');
@@ -55,7 +54,6 @@ function scripts() {
 	return gulp.src(jsFiles)
 		.pipe(gulpif(isDev, sourcemaps.init()))
 		.pipe(concat('scripts.js'))
-		.pipe(terser())
 		.pipe(gulpif(!isDev /*is production*/ , rename({
 			suffix: '.min'
 		})))

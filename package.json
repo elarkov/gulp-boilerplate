@@ -28,7 +28,6 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-terser": "^1.2.0",
     "imagemin-pngquant": "^8.0.0",
     "node-sass": "^4.13.0",
     "smart-grid": "^2.1.2"
