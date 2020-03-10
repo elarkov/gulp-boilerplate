@@ -106,4 +106,30 @@ $('.following-scroll').on( 'click', function(e){
 	return false;
 });
 
+//Popup 
+let popup = function() {
+	document.addEventListener('click', function (e) {
+		//e.preventDefault();
+		e = e || window.event;
+		let target = e.target || e.srcElement;
+	
+		if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'popup') {
+			if (target.hasAttribute('data-target')) {
+				let m_ID = target.getAttribute('data-target');
+				document.getElementById(m_ID).classList.add('open');
+				document.body.classList.add('scroll-hidden');
+				e.preventDefault();
+			}
+		}
+	
+		if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'popup') || target.classList.contains('modal')) {
+			let modal = document.querySelector('[class="popup open"]');
+			modal.classList.remove('open');
+			document.body.classList.remove('scroll-hidden');
+			e.preventDefault();
+		}
+	}, false);
+};
+popup();
+
 /*customs scripts*/

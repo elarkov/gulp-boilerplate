@@ -20,8 +20,6 @@ const isSync = process.argv.includes('--sync');
 
 let jsFiles = [
 	'node_modules/jquery/dist/jquery.min.js',
-	'src/libs/fancybox/jquery.fancybox.min.js',
-	'src/libs/jqvalidateform/jquery.validate.min.js',
 	'src/js/custom.js',
 ];
 
@@ -93,12 +91,14 @@ function grid(done) {
 		offset: "10px",
 		container: {
 			maxWidth: "1230px",
-			fields: "30px"
+			fields: "15px"
 		},
 		breakPoints: {
+			// xl: {
+			// 	width: "1280px",
+			// },
 			// md: {
 			// 	width: "920px",
-			// 	fields: "15px"
 			// },
 			// sm: {
 			// 	width: "720px"

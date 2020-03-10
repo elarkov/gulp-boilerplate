@@ -1,37 +1,6 @@
-@include reset();
-
 // .degubGrid{
 //     @include debug(rgba(0, 0, 0, 0.4), 1px solid #ff0);
 // }
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-
-a {
-	text-decoration: none;
-	display: block;
-	color: $text;
-	&:hover {
-	  color: $text;
-	}
-}
-
-img {
-  display: block;
-}
-
-body {
-  position: relative;
-  min-width: 320px;
-  font-size: 16px;
-  font-family: $default-font;
-	line-height: 1.65;
-	overflow-x: hidden;
-  color: $text;
-  -web-kit-font-smoothing: antialiased;
-}
 
 .wrapper {
 	position: relative;
@@ -46,24 +15,10 @@ body {
 .button {
 	display: inline-block;
   font-family: $default-font;
-  font-size: 16px;
-  font-weight: 700;
   text-align: center;
   border: 0;
-  line-height: 11px;
-  background-color: $accent;
   cursor: pointer;
-  &:hover {
-    color: #333333;
-  }
 }
-
-.title-section {
-  font-size: 46px;
-  font-weight: 700;
-  line-height: 55px;
-}
-
 
 .scroll-hidden {
   overflow: hidden;
